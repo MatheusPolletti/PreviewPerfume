@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body
+{
+    margin: 0px;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.produto
+{
+    background-color: #FFF;
+
+    margin-top: 4vh;
+
+    margin-bottom: 2vh;
+    
+    margin-left: 4vw;
+    
+    margin-right: 4vw;
+
+    border-radius: 20px;
+}
+
+.informacoesProduto
+{
+    margin-left: 6vw;
+}
+
+.imagem {
+    background-image: url('images/image-product-mobile.jpg');
+
+    background-size: cover;
+    
+    width: 100%;
+    
+    aspect-ratio: 16 / 9;
+    
+    border-radius: 10px 10px 0px 0px;
+}
+
+#classificacao
+{
+    letter-spacing: 0.5vw;
+}
+
+#classificacao, #descricao
+{
+    color: hsl(228, 12%, 48%);
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: calc(0.4rem + 2vw);
+
+    font-weight: 400;
+
+    padding-right: 4vw;
+}
+
+#nomePerfume
+{
+    color: hsl(212, 21%, 14%);
+
+    font-family: 'Fraunces',sans-serif;
+
+    font-size: calc(1.2rem + 2vw);
+
+    font-weight: 800;
+
+    margin-top: 1vh;
+
+    margin-bottom: 0vh;
+
+    padding-right: 2vw;
+}
+
+#descricao
+{
+    margin-bottom: -2vh;
+}
+
+.precos
+{
+    display: flex;
+
+    align-items: center;
+    
+    gap: 4vw;
+
+    margin-bottom: -2vh;
+}
+
+#precoAtual
+{
+    font-family: 'Fraunces', sans-serif;
+    
+    color: hsl(158, 36%, 37%);
+
+    font-size: calc(1.5rem + 2vw);
+
+    font-weight: 700;
+}
+
+#precoAntigo
+{
+    font-family: 'Fraunces', sans-serif;
+    
+    color: hsl(228, 12%, 48%);
+
+    font-size: calc(0.5rem + 2vw);
+
+    text-decoration: line-through;
+}
+
+#botaoProduto
+{
+    background-color: hsl(158, 36%, 37%);
+
+    color: #FFF;
+
+    width: 93%;
+
+    height: 7vh;
+
+    font-family: 'Fraunces', sans-serif;
+
+    font-size: calc(0.5rem + 2vw);
+
+    font-weight: 400;
+    
+    border: none;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    margin-bottom: 4vh;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#botaoProduto:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+@media (min-width: 1440px) 
+{
+    .produto {
+        display: flex;
+
+        flex-direction: row;
+        
+        width: 50%;
+
+        height: 80vh;
+        
+        margin: 5vh auto;
+
+        border-radius: 10px; 
+    }
+
+    .informacoesProduto 
+    {
+        width: 50%;
+
+        margin-left: -2vw;
+        
+        padding: 4vw;
+    }
+
+    .imagem {
+        background-image: url('images/image-product-desktop.jpg');
+
+        width: 50%;
+        
+        aspect-ratio: 16 / 9;
+        
+        border-radius: 10px 0px 0px 10px; 
+    }
+
+    #classificacao, #descricao
+    {
+        font-size: 14px;
+
+        padding-right: 0px;
+    }
+
+    #nomePerfume
+    {
+        font-size: 34px;
+    }
+
+    .precos
+    {
+        gap: 2vw;
+    }
+
+    #precoAtual
+    {
+        font-size: 34px;
+    }
+
+    #precoAntigo
+    {
+        font-size: 24px;
+    }
+
+    #botaoProduto
+    {
+        width: 21vw;
+    
+        font-size: 24px;
+    }
+}
